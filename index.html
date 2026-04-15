@@ -10,6 +10,7 @@
 
   <header>
     <h1>Kanban Task Board</h1>
+    <p>Manage your tasks</p>
 
     <div class="header-controls">
       <span id="taskCounter" class="badge">0 Tasks</span>
@@ -21,26 +22,35 @@
         <option value="medium">Medium</option>
         <option value="low">Low</option>
       </select>
+
+      <label for="searchTask">Search:</label>
+      <input type="text" id="searchTask" placeholder="Search tasks...">
     </div>
   </header>
 
   <main>
-    <section id="todo">
+    <section id="todo" class="column">
       <h2>To Do</h2>
+      <p class="column-text">Tasks you still need to start</p>
       <ul id="todoList"></ul>
-      <button type="button" class="addTaskBtn" data-column="todo">Add Task</button>
+      <p class="empty-message">No tasks yet</p>
+      <button type="button" class="addTaskBtn" data-column="todo">+ Add Task</button>
     </section>
 
-    <section id="inprogress">
+    <section id="inprogress" class="column">
       <h2>In Progress</h2>
+      <p class="column-text">Tasks you are currently working on</p>
       <ul id="inprogressList"></ul>
-      <button type="button" class="addTaskBtn" data-column="inprogress">Add Task</button>
+      <p class="empty-message">No tasks yet</p>
+      <button type="button" class="addTaskBtn" data-column="inprogress">+ Add Task</button>
     </section>
 
-    <section id="done">
+    <section id="done" class="column">
       <h2>Done</h2>
+      <p class="column-text">Completed tasks</p>
       <ul id="doneList"></ul>
-      <button type="button" class="addTaskBtn" data-column="done">Add Task</button>
+      <p class="empty-message">No tasks yet</p>
+      <button type="button" class="addTaskBtn" data-column="done">+ Add Task</button>
       <button type="button" id="clearDoneBtn">Clear Done</button>
     </section>
   </main>
@@ -50,10 +60,10 @@
       <h2>Add New Task</h2>
 
       <label for="taskTitle">Title:</label>
-      <input type="text" id="taskTitle">
+      <input type="text" id="taskTitle" placeholder="Enter task title">
 
       <label for="taskDescription">Description:</label>
-      <textarea id="taskDescription"></textarea>
+      <textarea id="taskDescription" placeholder="Enter task description"></textarea>
 
       <label for="taskPriority">Priority:</label>
       <select id="taskPriority">
@@ -66,11 +76,15 @@
       <input type="date" id="taskDueDate">
 
       <div class="modal-buttons">
-        <button type="button" id="saveTaskBtn">Save</button>
+        <button type="button" id="saveTaskBtn">Save Task</button>
         <button type="button" id="cancelTaskBtn">Cancel</button>
       </div>
     </div>
   </div>
+
+  <footer>
+    <p>Kanban Task Board Project</p>
+  </footer>
 
   <script src="taskmanager.js"></script>
 </body>
