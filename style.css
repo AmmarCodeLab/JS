@@ -6,17 +6,17 @@ body {
   margin: 0;
   padding: 24px;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #eef2ff, #f8fafc);
-  color: #1e293b;
+  background-color: #f1f5f9;
+  color: #0f172a;
 }
 
 header {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #3730a3, #6366f1);
   color: white;
   padding: 24px;
   border-radius: 16px;
   margin-bottom: 24px;
-  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.18);
+  box-shadow: 0 8px 20px rgba(55, 48, 163, 0.28);
 }
 
 header h1 {
@@ -39,11 +39,10 @@ header p {
 
 .badge {
   background-color: white;
-  color: #4f46e5;
+  color: #3730a3;
   padding: 7px 14px;
   border-radius: 999px;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
 }
 
 main {
@@ -54,19 +53,19 @@ main {
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   border-radius: 16px;
   padding: 18px;
   flex: 1;
   min-height: 320px;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
   border: 1px solid #e2e8f0;
 }
 
 section h2 {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #4338ca;
+  color: #3730a3;
   font-size: 22px;
 }
 
@@ -77,24 +76,24 @@ ul {
 }
 
 .task-card {
-  background-color: #ffffff;
-  border: 1px solid #dbe2f0;
+  background-color: #f8fafc;
+  border: 1px solid #c7d2fe;
   border-radius: 14px;
   padding: 14px;
   margin-bottom: 12px;
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 10px rgba(55, 48, 163, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .task-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 18px rgba(55, 48, 163, 0.12);
 }
 
 .task-card h3 {
   margin: 0 0 8px 0;
   font-size: 18px;
-  color: #1e293b;
+  color: #0f172a;
 }
 
 .task-card p {
@@ -123,12 +122,12 @@ ul {
 }
 
 .low {
-  background-color: #dcfce7;
-  color: #15803d;
+  background-color: #e0e7ff;
+  color: #3730a3;
 }
 
 button {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #3730a3, #6366f1);
   color: white;
   border: none;
   padding: 9px 15px;
@@ -141,23 +140,27 @@ button {
 }
 
 button:hover {
-  opacity: 0.95;
+  opacity: 0.92;
   transform: translateY(-1px);
 }
 
 #clearDoneBtn {
-  background: linear-gradient(135deg, #e11d48, #f43f5e);
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+#clearDoneBtn:hover {
+  opacity: 0.95;
 }
 
 input,
 textarea,
 select {
   padding: 10px 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #a5b4fc;
   border-radius: 10px;
   font-size: 14px;
   background-color: white;
-  color: #1e293b;
+  color: #0f172a;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -180,7 +183,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 23, 42, 0.35);
+  background-color: rgba(15, 23, 42, 0.38);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,13 +200,14 @@ textarea {
   max-width: 90%;
   padding: 24px;
   border-radius: 18px;
-  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 18px 40px rgba(55, 48, 163, 0.18);
+  border: 1px solid #e0e7ff;
 }
 
 .modal-content h2 {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #4338ca;
+  color: #3730a3;
 }
 
 .modal-content label {
@@ -239,7 +243,6 @@ textarea {
     opacity: 1;
     transform: scale(1);
   }
-
   to {
     opacity: 0;
     transform: scale(0.95);
