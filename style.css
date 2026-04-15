@@ -37,12 +37,19 @@ header p {
   flex-wrap: wrap;
 }
 
+.header-controls label {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .badge {
   background-color: white;
   color: #3730a3;
   padding: 7px 14px;
   border-radius: 999px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 main {
@@ -64,9 +71,21 @@ section {
 
 section h2 {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: #3730a3;
   font-size: 22px;
+}
+
+.column-text {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.empty-message {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0 0 16px 0;
 }
 
 ul {
@@ -94,12 +113,24 @@ ul {
   margin: 0 0 8px 0;
   font-size: 18px;
   color: #0f172a;
+  cursor: pointer;
 }
 
 .task-card p {
   margin: 6px 0;
   color: #475569;
   line-height: 1.4;
+}
+
+.task-card input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 1px solid #6366f1;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  color: #0f172a;
 }
 
 .priority-badge {
@@ -109,6 +140,7 @@ ul {
   font-size: 12px;
   font-weight: bold;
   margin: 8px 0;
+  text-transform: capitalize;
 }
 
 .high {
@@ -144,6 +176,14 @@ button:hover {
   transform: translateY(-1px);
 }
 
+.edit-btn {
+  background: linear-gradient(135deg, #0369a1, #38bdf8);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
 #clearDoneBtn {
   background: linear-gradient(135deg, #dc2626, #ef4444);
 }
@@ -177,6 +217,13 @@ textarea {
   min-height: 80px;
 }
 
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  padding: 12px 0;
+}
+
 #taskModal {
   position: fixed;
   top: 0;
@@ -188,6 +235,7 @@ textarea {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  z-index: 999;
 }
 
 #taskModal[hidden] {
